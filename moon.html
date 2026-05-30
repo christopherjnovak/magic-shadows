@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon · Magic Shadows</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div class="stars"></div>
+
+<nav>
+  <a href="index.html" class="nav-home">← Magic Shadows</a>
+  <a href="moon.html"   class="nav-link active">Moon</a>
+  <a href="stella.html" class="nav-link">Stella</a>
+  <a href="lucky.html"  class="nav-link">Lucky</a>
+  <a href="autumn.html" class="nav-link">Autumn</a>
+</nav>
+
+<main>
+  <character-card
+    index="01"
+    name="Moon"
+    creature="Full Elf"
+    age="16"
+    skill="Born with powers"
+    powers="Teleportation,Realm Travel,Magic,Full Shapeshifting,White/Blue Animal Form"
+    equipment="None"
+    gem="Moonstones"
+    elven-status="Daughter of the Queen"
+    flaw="Can be too fierce at times and very stubborn — but if excited she gets super bubbly 🌸"
+    story="Moon was born to the queen of the elves, which already made her extraordinary — but even by royal standards, her power is something else entirely. Nobody knows why she has more magic than any regular elf, and honestly? She's not complaining. At thirteen, a half-elf betrayed the kingdom and it fell to Moon to stop them. She did. Now at sixteen she's still figuring out the full scope of what she can do. As a full elf she can shift into any animal form, but her favourite is always the fox 🦊 — the form even half-elves can take, and the one that feels most like her."
+    cover="images/moon-normal.png"
+    accent="#38d8f5"
+  >
+    <char-form section="⚔️ Battle Style"   label="Battle Ready"    src="images/moon-battle.png"></char-form>
+    <char-form section="⚔️ Battle Style"   label="Using Magic"     src="images/moon-magic.png"></char-form>
+    <char-form section="🦊 Fox Form"        label="Fox Form"        src="images/moon-fox-1.jpg"></char-form>
+    <char-form section="🦊 Fox Form"        label="Fox Form ✦"      src="images/moon-fox-2.jpg"></char-form>
+    <char-form section="🐺 Wolf Form"       label="Wolf Form"       src="images/moon-wolf-1.png"></char-form>
+    <char-form section="🐺 Wolf Form"       label="Wolf Form ✦"     src="images/moon-wolf-2.jpg"></char-form>
+    <char-form section="🐉 Special Form"    label="Special Form"    src="images/moon-special-1.jpg"></char-form>
+    <char-form section="🐉 Special Form"    label="Special Form ✦"  src="images/moon-special-2.jpg"></char-form>
+    <char-form section="👑 Queen Form"      label="Queen Form"      src="images/moon-queen-1.png"></char-form>
+    <char-form section="👑 Queen Form"      label="Queen Form ✦"    src="images/moon-queen-2.jpg"></char-form>
+    <char-form section="🌙 Human Form"      label="Human Form"      src="images/moon-human-1.png"></char-form>
+    <char-form section="🌙 Human Form"      label="Human Form ✦"    src="images/moon-human-2.png"></char-form>
+    <char-form section="⚡ Five Years Old"  label="Little Moon"     src="images/moon-child.png"></char-form>
+  </character-card>
+</main>
+
+<footer>
+  <span>Magic Shadows</span> &nbsp;·&nbsp; a world of elves &amp; moonstone magic ✦
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<script src="js/character-card.js"></script>
+</body>
+</html>
