@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <!-- Cut a circle out of the moon disc to make the crescent -->
+    <mask id="crescent">
+      <rect width="64" height="64" fill="white"/>
+      <circle cx="44" cy="22" r="22" fill="black"/>
+    </mask>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Dark background -->
+  <rect width="64" height="64" rx="12" fill="#050b1a"/>
+  <!-- Crescent moon -->
+  <circle cx="28" cy="34" r="22" fill="#38d8f5" mask="url(#crescent)" filter="url(#glow)"/>
+</svg>
