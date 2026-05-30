@@ -1,0 +1,31 @@
+{
+  "name": "Magic Shadows",
+  "short_name": "Magic Shadows",
+  "description": "A world of elves & moonstone magic",
+  "start_url": "/magic-shadows/",
+  "scope": "/magic-shadows/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050b1a",
+  "theme_color": "#050b1a",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
