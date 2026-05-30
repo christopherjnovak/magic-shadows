@@ -208,6 +208,35 @@ footer span { font-family: 'Cinzel Decorative', serif; color: #38d8f5; opacity: 
   0%,100% { filter: drop-shadow(0 0 20px #38d8f5); transform: scale(1); }
   50%      { filter: drop-shadow(0 0 40px #00c8ff); transform: scale(1.08); }
 }
+.hero-coming-soon {
+  display: flex; flex-direction: column; align-items: center; gap: .6rem;
+  margin-bottom: 2rem;
+  padding-top: .5rem;
+  border-top: 1px solid rgba(56,216,245,.15);
+}
+
+.hero-book {
+  font-size: .9rem; color: var(--soft); letter-spacing: .04em;
+}
+.hero-book em {
+  color: var(--white); font-style: italic; font-weight: 600;
+}
+
+.hero-prologue-link {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: .75rem; letter-spacing: .12em;
+  color: #38d8f5; text-decoration: none;
+  padding: .5rem 1.4rem; border-radius: 30px;
+  border: 1px solid rgba(56,216,245,.4);
+  background: rgba(56,216,245,.08);
+  transition: all .25s;
+}
+.hero-prologue-link:hover {
+  background: rgba(56,216,245,.18);
+  box-shadow: 0 0 20px rgba(56,216,245,.25);
+  letter-spacing: .16em;
+}
+
 .scroll-hint {
   position: absolute; bottom: 2rem;
   display: flex; flex-direction: column; align-items: center; gap: .4rem;
