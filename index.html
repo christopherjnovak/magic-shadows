@@ -16,7 +16,16 @@
 
 <!-- ── Hero ── -->
 <section class="hero">
-  <div class="hero-gem"></div>
+  <!-- Crescent moon: full circle masked by offset circle -->
+  <svg class="hero-gem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="72" height="72" aria-hidden="true">
+    <defs>
+      <mask id="moon-crescent">
+        <rect width="64" height="64" fill="white"/>
+        <circle cx="44" cy="20" r="24" fill="black"/>
+      </mask>
+    </defs>
+    <circle cx="26" cy="34" r="24" fill="#38d8f5" mask="url(#moon-crescent)"/>
+  </svg>
   <p class="hero-sparkle">✦ a world of elves &amp; magic ✦</p>
   <h1>Magic Shadows</h1>
   <p>Step into a realm where moonstone magic crackles through ancient elven forests and power runs deeper than anyone can explain.</p>

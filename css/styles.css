@@ -198,34 +198,27 @@ footer span { font-family: 'Cinzel Decorative', serif; color: #38d8f5; opacity: 
   color: var(--soft); max-width: 560px; line-height: 1.7; margin-bottom: 2.5rem;
 }
 .hero-gem {
-  width: 64px; height: 64px; margin-bottom: 1.5rem;
-  border-radius: 50%;
-  /* Crescent moon: the inset shadow "bites" a circle out of the disc */
-  background: transparent;
-  box-shadow:
-    inset -18px -3px 0 4px #38d8f5,        /* moon body */
-    inset -18px -3px 0 8px rgba(56,216,245,.25); /* soft inner halo */
-  transform: rotate(-35deg);
+  margin-bottom: 1.5rem;
   filter:
-    drop-shadow(0 0 12px rgba(56,216,245,.9))
-    drop-shadow(0 0 30px rgba(56,216,245,.5))
-    drop-shadow(0 0 60px rgba(56,216,245,.2));
+    drop-shadow(0 0 10px rgba(56,216,245,.9))
+    drop-shadow(0 0 28px rgba(56,216,245,.55))
+    drop-shadow(0 0 55px rgba(56,216,245,.25));
   animation: moonFloat 4s ease-in-out infinite;
 }
 @keyframes moonFloat {
   0%,100% {
-    transform: rotate(-35deg) translateY(0px);
+    transform: translateY(0px);
     filter:
-      drop-shadow(0 0 12px rgba(56,216,245,.9))
-      drop-shadow(0 0 30px rgba(56,216,245,.5))
-      drop-shadow(0 0 60px rgba(56,216,245,.2));
+      drop-shadow(0 0 10px rgba(56,216,245,.9))
+      drop-shadow(0 0 28px rgba(56,216,245,.55))
+      drop-shadow(0 0 55px rgba(56,216,245,.25));
   }
   50% {
-    transform: rotate(-35deg) translateY(-8px);
+    transform: translateY(-9px);
     filter:
-      drop-shadow(0 0 20px rgba(56,216,245,1))
-      drop-shadow(0 0 50px rgba(56,216,245,.7))
-      drop-shadow(0 0 90px rgba(56,216,245,.3));
+      drop-shadow(0 0 18px rgba(56,216,245,1))
+      drop-shadow(0 0 45px rgba(56,216,245,.75))
+      drop-shadow(0 0 80px rgba(56,216,245,.35));
   }
 }
 .hero-coming-soon {
