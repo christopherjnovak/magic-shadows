@@ -337,12 +337,13 @@ footer span { font-family: 'Cinzel Decorative', serif; color: #38d8f5; opacity: 
 
 /* Card body */
 .preview-card-body {
-  padding: 1.1rem 1.4rem 1.6rem;
+  padding: 1.2rem 1.8rem 2rem;
   flex: 1; display: flex; flex-direction: column; gap: .9rem;
 }
 
 .preview-card-gems {
   display: flex; gap: .5rem; flex-wrap: wrap;
+  width: 100%;
 }
 .preview-gem-tag {
   font-size: .72rem; padding: .2rem .65rem; border-radius: 20px;
