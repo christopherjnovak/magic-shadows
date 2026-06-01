@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Magic Shadows" />
+  <title>Celestia · Magic Shadows</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body style="--page-accent:#c9a84c;--page-bg:#150f02">
+
+<div class="stars"></div>
+
+<nav>
+  <a href="index.html" class="nav-home">← Magic Shadows</a>
+  <a href="moon.html"      class="nav-link">Moon</a>
+  <a href="stella.html"    class="nav-link">Stella</a>
+  <a href="lucky.html"     class="nav-link">Lucky</a>
+  <a href="autumn.html"    class="nav-link">Autumn</a>
+  <a href="amber.html"     class="nav-link">Amber</a>
+  <a href="jade.html"      class="nav-link">Jade</a>
+  <a href="celestia.html"  class="nav-link active">Celestia</a>
+  <a href="iwa.html"       class="nav-link">Iwa</a>
+  <a href="lyra.html"      class="nav-link">Lyra</a>
+  <a href="locations.html" class="nav-link">Locations</a>
+</nav>
+
+<main>
+  <character-card
+    index="parent"
+    name="Celestia"
+    creature="Elf"
+    age="40"
+    skill="Rules the elves"
+    powers="Commanding an Army"
+    equipment="Crown"
+    gem="None listed"
+    elven-status="Queen of the Elves"
+    flaw="Easily subjected to dark magic — when the evil is too great, it can overcome her 👑"
+    story="Celestia spends her days on the throne, and most of the time she is kind — mostly. When her kingdom is threatened she bares her teeth, and there is no fiercer protector of her people. She is the eldest daughter of the old elven queen and strives every day to live up to her mother's legacy. Her younger sister Iwa is the heir to the fire realm — and the mother of Stella and Lucky, making them Moon's cousins. Celestia carries the weight of the crown alone, and while she rarely shows it, that weight is immense."
+    cover="images/celestia/celestia-normal.png"
+    accent="#c9a84c"
+  >
+    <char-form section="⚔️ Battle Form" label="Battle Form" src="images/celestia/celestia-battle.png"></char-form>
+    <char-form section="🕰️ Before"      label="Before"      src="images/celestia/celestia-before.jpg"></char-form>
+  </character-card>
+</main>
+
+<footer>
+  <span>Magic Shadows</span> &nbsp;·&nbsp; a world of elves &amp; moonstone magic ✦
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<script src="js/character-card.js"></script>
+</body>
+</html>

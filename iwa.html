@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Magic Shadows" />
+  <title>Iwa · Magic Shadows</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body style="--page-accent:#e0507a;--page-bg:#1a0510">
+
+<div class="stars"></div>
+
+<nav>
+  <a href="index.html" class="nav-home">← Magic Shadows</a>
+  <a href="moon.html"      class="nav-link">Moon</a>
+  <a href="stella.html"    class="nav-link">Stella</a>
+  <a href="lucky.html"     class="nav-link">Lucky</a>
+  <a href="autumn.html"    class="nav-link">Autumn</a>
+  <a href="amber.html"     class="nav-link">Amber</a>
+  <a href="jade.html"      class="nav-link">Jade</a>
+  <a href="celestia.html"  class="nav-link">Celestia</a>
+  <a href="iwa.html"       class="nav-link active">Iwa</a>
+  <a href="lyra.html"      class="nav-link">Lyra</a>
+  <a href="locations.html" class="nav-link">Locations</a>
+</nav>
+
+<main>
+  <character-card
+    index="parent"
+    name="Iwa"
+    creature="Elf (disguised as human)"
+    age="38"
+    skill="Being a mum — and using potions"
+    powers="Potions"
+    equipment="Spell Book"
+    gem="None listed"
+    elven-status="Heir to the Fire Realm — Celestia's younger sister"
+    flaw="Not very good at using spells 🌸"
+    story="Iwa is a full-time mum, and she loves her girls more than anything. She will do whatever it takes to help Stella and Lucky become who they want to be. But there is more to her than she lets on — she is secretly a full elf, living in the human world specifically to protect her daughters from Lyra. She hides her ears and her heritage to keep them safe. When Lyra's attacks grow bolder and the kingdom is threatened, Iwa faces an impossible choice: stay and shield her daughters from the truth, or step aside and let them save the world. 🌸"
+    cover="images/iwa/iwa-normal.jpg"
+    accent="#e0507a"
+  >
+    <char-form section="🕰️ Before" label="Before" src="images/iwa/iwa-before.png"></char-form>
+  </character-card>
+</main>
+
+<footer>
+  <span>Magic Shadows</span> &nbsp;·&nbsp; a world of elves &amp; moonstone magic ✦
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightbox-img" src="" alt="" />
+</div>
+
+<script src="js/character-card.js"></script>
+</body>
+</html>
